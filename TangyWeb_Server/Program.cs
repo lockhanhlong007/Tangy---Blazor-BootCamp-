@@ -1,5 +1,12 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
+
+using TangyWeb_Business.Repository;
+using TangyWeb_Business.Repository.IRepository;
+
+using TangyWeb_DataAccess.Data;
+
 using TangyWeb_Server.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +14,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddSingleton<WeatherForecastService>(); builder.Services.AddDbContext<ApplicationDbContext>(options =>
+     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 var app = builder.Build();
 
