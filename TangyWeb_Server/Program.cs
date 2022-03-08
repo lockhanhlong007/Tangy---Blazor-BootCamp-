@@ -8,6 +8,8 @@ using TangyWeb_Business.Repository.IRepository;
 using TangyWeb_DataAccess.Data;
 
 using TangyWeb_Server.Data;
+using TangyWeb_Server.Services.IServices;
+using TangyWeb_Server.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +21,7 @@ builder.Services.AddSingleton<WeatherForecastService>(); builder.Services.AddDbC
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
-
+builder.Services.AddScoped<IFileUpload, FileUpload>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
