@@ -42,8 +42,7 @@
             {
                 //loading gif
                 <div class="text-center">
-                <img src="/images/loading.gif">
-                    </div>
+                <img src="/Images/loading.gif"></div>
             }
             else
             {
@@ -58,7 +57,6 @@
     private IEnumerable<CategoryDTO> Categories { get; set; } = new List<CategoryDTO>();
     public bool IsLoading { get; set; }
     private int DeleteCategoryId { get; set; } = 0;
-
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {

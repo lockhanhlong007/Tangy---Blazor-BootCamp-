@@ -21,4 +21,8 @@
     <ProjectReference Include="..\TangyWeb_Models\TangyWeb_Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\Other Images\" />
+  </ItemGroup>
+
 </Project>
