@@ -7,8 +7,45 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="wwwroot\images\Client Project\ajax-loader.gif" />
+    <None Remove="wwwroot\images\Client Project\background.png" />
+    <None Remove="wwwroot\images\Client Project\confirmation.jpg" />
+    <None Remove="wwwroot\images\Client Project\loader.gif" />
+    <None Remove="wwwroot\images\loading.gif" />
+    <None Remove="wwwroot\images\product\26b90c6f-bf5a-4dc5-9d75-acf721d60172.png" />
+    <None Remove="wwwroot\images\product\467bf7e9-3971-467f-ba53-8a3c470dc345.png" />
+    <None Remove="wwwroot\images\product\back lust.jpg" />
+    <None Remove="wwwroot\images\product\bergamot.jpg" />
+    <None Remove="wwwroot\images\product\creamy cookies.jpg" />
+    <None Remove="wwwroot\images\product\d4ff5ca3-3327-424f-9584-5f9073c9ad32.png" />
+    <None Remove="wwwroot\images\product\default.png" />
+    <None Remove="wwwroot\images\product\dry hay.jpg" />
+    <None Remove="wwwroot\images\product\e95fc771-7ce4-477a-a730-b67b6cfc4179.png" />
+    <None Remove="wwwroot\images\product\fc099bd2-48e1-4160-b1bd-941620da6235.png" />
+    <None Remove="wwwroot\images\product\pine forest.jpg" />
+    <None Remove="wwwroot\images\product\pink berry.jpg" />
+    <None Remove="wwwroot\images\product\pistachio love.jpg" />
+    <None Remove="wwwroot\images\product\red lush.jpg" />
+    <None Remove="wwwroot\images\product\rose pie.jpg" />
+    <None Remove="wwwroot\images\product\SMOKEY WOOD.jpg" />
+    <None Remove="wwwroot\images\product\snowball.jpg" />
+    <None Remove="wwwroot\images\product\tobacco pipe.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Blazored.LocalStorage" Version="4.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.1" PrivateAssets="all" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TangyWeb_Common\TangyWeb_Common.csproj" />
+    <ProjectReference Include="..\TangyWeb_Models\TangyWeb_Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\Other Images\" />
   </ItemGroup>
 
 </Project>

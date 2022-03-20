@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 using AutoMapper;
 using TangyWeb_Business.Repository.IRepository;
 using TangyWeb_DataAccess.Data;
