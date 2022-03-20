@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TangyWeb_Common\TangyWeb_Common.csproj" />
     <ProjectReference Include="..\TangyWeb_DataAccess\TangyWeb_DataAccess.csproj" />
     <ProjectReference Include="..\TangyWeb_Models\TangyWeb_Models.csproj" />
   </ItemGroup>
