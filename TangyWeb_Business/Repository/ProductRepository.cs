@@ -60,9 +60,9 @@ namespace TangyWeb_Business.Repository
             return new ProductDTO();
         }
 
-        public async Task<IEnumerable<ProductDTO>> GetAll()
+        public async Task<List<ProductDTO>> GetAll()
         {
-            return _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDTO>>(_db.Products.Include(u => u.Category).Include(u => u.ProductPrices));
+            return _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDTO>>(_db.Products.Include(u => u.Category).Include(u => u.ProductPrices)).ToList();
         }
 
         public async Task<ProductDTO> Update(ProductDTO objDTO)

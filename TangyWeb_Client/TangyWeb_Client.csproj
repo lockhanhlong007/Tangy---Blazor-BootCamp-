@@ -7,10 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="wwwroot\images\Client Project\ajax-loader.gif" />
-    <None Remove="wwwroot\images\Client Project\background.png" />
-    <None Remove="wwwroot\images\Client Project\confirmation.jpg" />
-    <None Remove="wwwroot\images\Client Project\loader.gif" />
+    <None Remove="wwwroot\images\client-project\ajax-loader.gif" />
+    <None Remove="wwwroot\images\client-project\background.png" />
+    <None Remove="wwwroot\images\client-project\confirmation.jpg" />
+    <None Remove="wwwroot\images\client-project\loader.gif" />
     <None Remove="wwwroot\images\loading.gif" />
     <None Remove="wwwroot\images\product\26b90c6f-bf5a-4dc5-9d75-acf721d60172.png" />
     <None Remove="wwwroot\images\product\467bf7e9-3971-467f-ba53-8a3c470dc345.png" />
@@ -36,6 +36,7 @@
     <PackageReference Include="Blazored.LocalStorage" Version="4.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.1" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 

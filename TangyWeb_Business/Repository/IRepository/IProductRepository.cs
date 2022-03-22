@@ -14,6 +14,6 @@ namespace TangyWeb_Business.Repository.IRepository
         public Task<ProductDTO> Update(ProductDTO objDTO);
         public Task<int> Delete(int id);
         public Task<ProductDTO> Get(int id);
-        public Task<IEnumerable<ProductDTO>> GetAll();
+        public Task<List<ProductDTO>> GetAll();
     }
 }

@@ -19,7 +19,8 @@ namespace TangyWeb_Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _productRepository.GetAll());
+            var data = await _productRepository.GetAll();
+            return Ok(data);
         }
 
         [HttpGet("{productId}")]
