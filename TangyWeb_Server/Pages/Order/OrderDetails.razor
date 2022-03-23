@@ -164,11 +164,11 @@ else
 							   <button @onclick="ShipOrder" class="btn btn-success form-control my-1">Ship Order</button>
 							}
 
-							@if (Order.OrderHeader.Status == SD.Status_Confirmed ||
+						@*	@if (Order.OrderHeader.Status == SD.Status_Confirmed ||
 						   Order.OrderHeader.Status == SD.Status_Pending)
 							{
 								<button @onclick="CancelOrder" class="btn btn-danger form-control my-1">Cancel Order</button>
-							}
+							}*@
 						</div>
 					</div>
 				</div>
