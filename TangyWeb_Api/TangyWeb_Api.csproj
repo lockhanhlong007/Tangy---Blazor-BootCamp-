@@ -9,11 +9,14 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.3" />
+    <PackageReference Include="Stripe.net" Version="39.83.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TangyWeb_Business\TangyWeb_Business.csproj" />
+    <ProjectReference Include="..\TangyWeb_DataAccess\TangyWeb_DataAccess.csproj" />
   </ItemGroup>
 
 </Project>
